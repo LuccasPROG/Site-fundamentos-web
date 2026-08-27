@@ -1,3 +1,4 @@
+// fechar menu sosinho
 const menuToggle = document.getElementById("menu-toggle");
 const menuLinks = document.querySelectorAll(".menu nav a");
 
@@ -28,5 +29,28 @@ window.addEventListener("scroll", function () {
     const scrollProgress = (scrollTop / scrollTotal) * 100;
 
     progressBar.style.width = scrollProgress + "%";
+
+});
+
+// Botão TOpo
+
+const btnTopo = document.getElementById("btn-topo");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 500) {
+        btnTopo.classList.add("show");
+    } else {
+        btnTopo.classList.remove("show");
+    }
+
+});
+
+btnTopo.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
 });

@@ -3,7 +3,7 @@
     padding: 0;
 }
 html{
-    font-size: 62,5%;
+    /* font-size: 62.5%; */
     scroll-behavior: smooth;
 }
 :root{
@@ -24,7 +24,7 @@ body{
     margin: 0 auto;
 }
 /* Fundo em gradiente Rosa */
-.fundo_rosa{
+.fundo_rosa {
     min-height: 100vh;
 
     background:
@@ -39,6 +39,34 @@ body{
             transparent 40%
         ),
         #050505;
+
+    background-size: 150% 150%;
+
+    animation: movimentoFundo 8s ease-in-out infinite alternate;
+}
+
+@keyframes movimentoFundo {
+
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+
+}
+
+@keyframes movimentoFundo {
+
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+
 }
 
 .divisor-secao{
