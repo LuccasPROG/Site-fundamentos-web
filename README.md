@@ -1,25 +1,25 @@
 # 💄 Pink Glamour
 
-Site desenvolvido para a **Pink Glamour**, uma loja de produtos de beleza e maquiagem.
+Site desenvolvido para a **Pink Glamour**, uma loja de produtos de beleza e maquiagem
 
 O projeto foi criado como parte dos meus estudos de **HTML e CSS**, com o objetivo de praticar estruturação de páginas, estilização, responsividade e criação de componentes visuais.
 
 ---
 
-##  Sobre o projeto
+## Sobre o projeto
 
 A Pink Glamour é uma página fictícia de uma loja de produtos de beleza.
 
 O site apresenta:
 
--  Página inicial
--  Categorias de produtos
--  Benefícios da loja
--  Sobre a empresa
--  Área de contato
--  Botões de atendimento pelo WhatsApp
--  Menu hamburger para celulares e tablets
--  Layout responsivo
+- Página inicial
+- Categorias de produtos
+- Benefícios da loja
+- Sobre a empresa
+- Área de contato
+- Botões de atendimento pelo WhatsApp
+- Menu hamburger para celulares e tablets
+- Layout responsivo
 
 ---
 
@@ -50,16 +50,16 @@ Durante o desenvolvimento foram utilizados diversos conceitos de HTML e CSS, com
 
 O site foi desenvolvido para se adaptar a diferentes tamanhos de tela.
 
-###  Desktop
+### Desktop
 
 Em telas maiores, o site apresenta o menu de navegação completo.
 
-###  Tablet e celular
+### Tablet e celular
 
 Em telas de até `1024px`, o menu tradicional é substituído por um menu hamburger.
 
 O menu foi desenvolvido utilizando apenas:
 
 ```html
-<input type="checkbox">
-<label>
+<input type="checkbox" /> <label></label>
+```
