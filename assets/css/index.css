@@ -830,6 +830,51 @@ html{
         width: 220px;
         height: 220px;
     }
+
+        .rodape {
+        padding: 3rem 1.2rem 1.2rem;
+    }
+
+    .rodape-content {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .rodape-marca {
+        width: 100%;
+    }
+
+    .rodape-marca h2 {
+        font-size: 1.4rem;
+    }
+
+    .rodape-marca p {
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 0.95rem;
+    }
+
+    .rodape-links,
+    .rodape-contato {
+        width: 100%;
+        align-items: center;
+    }
+
+    .rodape-links a,
+    .rodape-contato a {
+        display: block;
+        width: fit-content;
+    }
+
+    .rodape-bottom {
+        width: 100%;
+        margin-top: 2.5rem;
+        padding-top: 1.2rem;
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 600px) {
@@ -840,6 +885,7 @@ html{
 
 }
 
+/* topo */
 #btn-topo {
     position: fixed;
 
@@ -878,23 +924,22 @@ html{
     visibility: visible;
 }
 
+/* RODAPE */
 .rodape {
+    width: 100%;
+    max-width: 100%;
     background: #050505;
-
     padding: 4rem 2rem 1.5rem;
-
     border-top: 1px solid rgba(239, 77, 138, 0.2);
+    overflow: hidden;
 }
 
 .rodape-content {
+    width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: 2fr 1fr 1fr;
-
     gap: 4rem;
 }
 
@@ -909,53 +954,40 @@ html{
 
 .rodape-marca p {
     max-width: 350px;
-
     color: #aaa;
-
     line-height: 1.6;
 }
 
 .rodape-links,
 .rodape-contato {
     display: flex;
-
     flex-direction: column;
-
     gap: 1rem;
 }
 
 .rodape h3 {
     color: var(--white);
-
     font-size: 1.1rem;
-
     margin-bottom: 0.5rem;
 }
 
 .rodape a {
     color: #aaa;
-
     transition: 0.3s ease;
 }
 
 .rodape a:hover {
     color: var(--pink-white);
-
     transform: translateX(4px);
 }
 
 .rodape-bottom {
+    width: 100%;
     max-width: 1200px;
-
     margin: 3rem auto 0;
-
     padding-top: 1.5rem;
-
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-
     text-align: center;
-
     color: #888;
-
     font-size: 0.9rem;
 }

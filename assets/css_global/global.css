@@ -1,6 +1,17 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+.categorias-container,
+.beneficios-container,
+.sobre-container,
+.contato-container {
+    width: 100%;
 }
 html{
     /* font-size: 62.5%; */
@@ -18,6 +29,9 @@ body{
     font-size: 1.6rem;
     background: #050505;
     color: white;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 .main-content{
     max-width: 1200px;
@@ -93,3 +107,4 @@ a{
     z-index: 999999;
     transition: width 0.1s linear;
 }
+
