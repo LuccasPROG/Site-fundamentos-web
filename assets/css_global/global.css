@@ -54,3 +54,14 @@ body{
 a{
     text-decoration: none;
 }
+
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: var(--pink-white);
+    z-index: 999999;
+    transition: width 0.1s linear;
+}
