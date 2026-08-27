@@ -567,7 +567,8 @@ html{
     text-align: left;
     transition: all 0.2s ease;
 }
-.btn-opcao:hover, .btn-opcao.activate{
+.btn-opcao:hover,
+.btn-opcao.active {
     background: rgba(255, 51, 133, 0.15);
     border-color: var(--pink-white);
     color: var(--white);

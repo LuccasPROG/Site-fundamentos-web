@@ -54,3 +54,51 @@ btnTopo.addEventListener("click", function () {
     });
 
 });
+
+// COntato botões
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const botoesCategoria = document.querySelectorAll(".btn-opcao");
+    const botaoWhatsApp = document.getElementById("btn-whatsapp-enviar");
+
+    const numeroWhatsApp = "558498318905";
+
+    let categoriaSelecionada = "Maquiagem";
+
+    // Seleciona a categoria
+    botoesCategoria.forEach((botao) => {
+
+        botao.addEventListener("click", () => {
+
+            // Remove a seleção de todos
+            botoesCategoria.forEach((item) => {
+                item.classList.remove("active");
+            });
+
+            // Seleciona o botão clicado
+            botao.classList.add("active");
+
+            // Guarda a categoria
+            categoriaSelecionada = botao.dataset.categoria;
+
+        });
+
+    });
+
+    // Envia para o WhatsApp
+    botaoWhatsApp.addEventListener("click", (event) => {
+
+        event.preventDefault();
+
+        const mensagem =
+            `Olá! Vim pelo site da Pink Glamour e gostaria de atendimento sobre a categoria ${categoriaSelecionada}.`;
+
+        const url =
+            `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+        window.open(url, "_blank");
+
+    });
+
+});
